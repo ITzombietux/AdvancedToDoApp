@@ -271,12 +271,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nkr-ZX-18m"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AJl-Ke-iLu"/>
+                    <navigationItem key="navigationItem" id="AJl-Ke-iLu">
+                        <barButtonItem key="leftBarButtonItem" title="취소" id="1b2-ZW-ujy"/>
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="EOu-3o-ZhY">
+                            <connections>
+                                <segue destination="gJ8-2S-Mne" kind="unwind" unwindAction="unwindToListWithSegue:" id="rpc-mU-WDD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="tit-A8-l9y" id="5py-4f-cbn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ze4-iK-Q46" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="gJ8-2S-Mne" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2902.898550724638" y="118.52678571428571"/>
         </scene>
