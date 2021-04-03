@@ -23,4 +23,4 @@ struct Task {
     var additionalImages: [UIImage]
     var note: String
     var status: Status
-}//
+}////
